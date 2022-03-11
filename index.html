@@ -57,8 +57,54 @@
             <h1>Reported posts</h1>
         </div>
     </main>
-    <section>
-
+    <section class="main container my-2 mx-auto p-3">
+        <h4 class="mb-4">Questions:</h4>
+        <div>
+            <h5>Q1: How does JavaScript work?</h5>
+            <ol>
+                <li>Javascript run as interpreted programming language. Means, Javascript translates one statement at a
+                    time.</li>
+                <li>JavaScript is a high level dynamic typed programming language which means in javascript we not need
+                    to declear the type of variable.</li>
+                <li>In chrome javaScript code run using v8 engine.</li>
+                <li>V8 engine compiles JavaScript code into machine code using Just-In-Time compiler.</li>
+                <li>V8 engine takes javaScript source code and convert into Abstract Syntax Tree.</li>
+                <li>Then bytecode is interpreted by a Ignition interpreter.</li>
+                <li>Then TurboFan optimize and Compiles the code into an optimized Machine language.</li>
+            </ol>
+        </div>
+        <div>
+            <h5>Q2: What does JavaScript's event loop do?</h5>
+            <ol>
+                <li>JavaScript is synchronous and single threaded programming Language. Means JavaScript excute code
+                    through line by line synchronously.</li>
+                <li>By using Event Loop JavaScript can execute code asynchronously.</li>
+                <li>The Event Loop is a constantly running process that handle Call Stack and Callback Queue.</li>
+                <li>In event loop Call Stack is synchronous and Callback Queue is an asynchronous/non-blocking.</li>
+                <li>In event loop all synchronous event executed by Call Stack.</li>
+                <li>When an asynchronous event is found JavaScript push the event in Callback Queue.</li>
+                <li>After executing all synchronous event javaScript take each asynchronous event from the queue of
+                    Callback Queue.</li>
+                <li>Then Call Stack execute each event in the queue.</li>
+                <li>Asynchronous functions are: setTimeout, setInterval, fetch, async await.</li>
+            </ol>
+        </div>
+        <div>
+            <h5>Q3: Local Storage vs Session Storage?</h5>
+            <ol>
+                <li>In Local Storage data is not clean from the browser even when the tab or the whole browser is
+                    closed.</li>
+                <li>There is no data expiration date for Local Storage stored data.</li>
+                <li>So, Storing sensitive data in Local Storage can be a threat. Because if the hackers want they can
+                    access those stored data.</li>
+                <li>Session storage is a good choice for storing data in the browser. Because Session Storage only
+                    contains data for a specific session.</li>
+                <li> In Session Storage stored data is cleared when browser tab is closed or session is ends.</li>
+                <li>Since data is cleared in Session Storage after closing the tab, there is no need to compromise with
+                    browser performance.</li>
+            </ol>
+        </div>
+        <!-- C:\Users\Shahariar Rahman\Desktop\assignment-7\insta-shohor-ShahariarRahman> -->
     </section>
     <footer></footer>
 
